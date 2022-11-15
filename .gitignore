@@ -1,4 +1,7 @@
+datos/
+
 *.o
 *.out
 *.csv
+
 

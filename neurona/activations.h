@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../matrix/matrix.h"
+#include "../matriz/matrix.h"
 
 double sigmoid(double input);
 Matrix* sigmoidPrime(Matrix* m);

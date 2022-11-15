@@ -1,7 +1,7 @@
 #include "activations.h"
 
 #include <math.h>
-#include "../matrix/ops.h"
+#include "../matriz/ops.h"
 
 double sigmoid(double input) {
 	return 1.0 / (1 + exp(-1 * input));

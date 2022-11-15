@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../matrix/matrix.h"
+#include "../matriz/matrix.h"
 
 typedef struct {
 	Matrix* img_data;

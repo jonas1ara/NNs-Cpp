@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "../matrix/ops.h"
-#include "../neural/activations.h"
+#include "../matriz/ops.h"
+#include "../neurona/activations.h"
 
 #define MAXCHAR 1000
 
