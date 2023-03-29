@@ -1,8 +1,11 @@
 # Red Neuronal en C
 
-_Implementación de una red neuronal (perceptron) en C para reconocer el digito escrito a mano usando el dataset MNIST._
+**Implementación de una red neuronal (perceptron) en C para reconocer el digito escrito a mano usando el dataset MNIST**. El perceptrón es una red neuronal artificial de una sola capa que se utiliza para la clasificación binaria supervisada. El perceptrón usa una matriz para representar las redes neuronales y es un discriminador terciario que traza su entrada (un vector binario) a un único valor de salida (un solo valor binario) a través de dicha matriz. El perceptrón simple es un modelo de clasificación que consiste en un hiperplano que separa el espacio en dos regiones y asigna una clase a cada una de ellas, 
+en cuanto a la operación del producto punto, el perceptrón utiliza el producto punto para calcular la suma ponderada de las entradas y los pesos sinápticos.
 
 ![](./sources/MNIST.png)
+
+_Base de datos MNIST_
 
 
 ## Compilación
