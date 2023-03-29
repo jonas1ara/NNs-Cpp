@@ -14,6 +14,15 @@ Primero debes entrenar la red neuronal con el dataset MNIST, para ello [descarga
 
 Antes de ejecutar la predicción debes de entrenarlo con el dataset MNIST, para ello ejecuta asegurate de comentar en el programa main.c la parte de la predicción y descomenta la parte del entrenamiento, esta parte debe quedar de la siguiente manera:
 
+```c
+//ENTRENAMIENTO
+int number_imgs = 10000;
+Img** imgs = csv_to_imgs("data/mnist_train.csv", number_imgs);
+NeuralNetwork* net = network_create(784, 300, 10, 0.1);
+network_train_batch_imgs(net, imgs, number_imgs);
+network_save(net, "testeo_neuronal");
+```
+
 
 ### Entrenamiento
 
@@ -27,14 +36,7 @@ make
 
 _Entrenamiento de la red neuronal_
 
-```c
-//ENTRENAMIENTO
-int number_imgs = 10000;
-Img** imgs = csv_to_imgs("data/mnist_train.csv", number_imgs);
-NeuralNetwork* net = network_create(784, 300, 10, 0.1);
-network_train_batch_imgs(net, imgs, number_imgs);
-network_save(net, "testeo_neuronal");
-```
+
 
 ### Predicción
 
