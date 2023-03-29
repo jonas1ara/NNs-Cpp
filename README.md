@@ -11,8 +11,21 @@ Primero debes entrenar la red neuronal con el dataset MNIST, para ello [descarga
 
 Antes de ejecutar la predicción debes de entrenarlo con el dataset MNIST, para ello ejecuta asegurate de comentar en el programa main.c la parte de la predicción y descomenta la parte del entrenamiento, esta parte debe quedar de la siguiente manera:
 
+
+### Entrenamiento
+
+Para entrenar la red neuronal se debe ejecutar el siguiente comando:
+
+```bash
+make
+```
+
+![make](./sources/entrenamiento.gif)
+
+_Entrenamiento de la red neuronal_
+
 ```c
-//TRAINING
+//ENTRENAMIENTO
 int number_imgs = 10000;
 Img** imgs = csv_to_imgs("datos/mnist_train.csv", number_imgs);
 NeuralNetwork* net = network_create(784, 300, 10, 0.1);
@@ -20,26 +33,12 @@ network_train_batch_imgs(net, imgs, number_imgs);
 network_save(net, "testeo_neuronal");
 ```
 
-Para compilar el programa se debe ejecutar el siguiente comando:
-
-```bash
-make
-```
-
-## Entrenamiento
-
-Para entrenar la red neuronal se debe ejecutar el siguiente comando:
-
-```bash
-./main
-```
-
-## Ejecución
+### Predicción
 
 Una vez terminado el entrenamiento puedes ejecutar la predicción, para ello debes de comentar la parte del entrenamiento y descomentar la parte de la predicción, esta parte debe quedar de la siguiente manera:
 
 ```c
-// PREDICTING
+// PREDICCIÓN
 int number_imgs = 3000;
 Img** imgs = csv_to_imgs("datos/mnist_train.csv", number_imgs);
 NeuralNetwork* net = network_load("testeo_neuronal");
@@ -50,8 +49,12 @@ printf("Score: %1.5f \n", score);
 Para ejecutar el programa se debe ejecutar el siguiente comando:
 
 ```bash
-./main
+make
 ```
+
+![make](./sources/prediccion.gif)
+
+_Predicción de la red neuronal_
 
 ## Expresiones de gratitud
 
