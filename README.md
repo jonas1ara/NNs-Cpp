@@ -61,9 +61,6 @@ make
 
 _Predicción de la red neuronal_
 
-## Expresiones de gratitud
-
-_Escrito con ❤️ por [Jonas Lara](https://medium.com/@jonas_lara) estudiante de ingeniería en IA en la [UPIIT](https://www.upiit.ipn.mx/) para quien sea que este interesado_
 
 
 
